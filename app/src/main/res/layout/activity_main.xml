@@ -1,36 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <Spinner
-            android:id="@+id/spinner_section"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-        <Spinner
-            android:id="@+id/spinner_area"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-        <Spinner
-            android:id="@+id/spinner_zone"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"/>
-
-    </LinearLayout>
+        android:fontFamily="@font/jong"
+        android:text="우리 동네"
+        android:textSize="28sp"
+        android:layout_marginTop="40dp"
+        android:padding="16dp"
+        android:textStyle="bold"
+        android:textColor="#FF333333"/>
 
     <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/jong"
+        android:text="날씨를 알아볼까요?"
+        android:textSize="28sp"
+        android:layout_marginTop="16dp"
+        android:layout_below="@id/tv2"
+        android:textStyle="bold"
+        android:textColor="#FF333333"
+        android:padding="16dp"/>
+
+
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:padding="16dp">
+        <Spinner
+            android:id="@+id/spinner_section"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:fontFamily="@font/jong"
+            android:layout_gravity="right"
+            android:background="@drawable/box"/>
+        <Spinner
+            android:id="@+id/spinner_area"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="right"
+            android:fontFamily="@font/jong"
+            android:layout_below="@id/spinner_section"
+            android:background="@drawable/box"
+            android:layout_marginTop="12dp"/>
+        <Spinner
+            android:id="@+id/spinner_zone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:fontFamily="@font/jong"
+            android:layout_marginTop="12dp"
+            android:layout_below="@id/layout"
+            android:background="@drawable/box"/>
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="확인"
@@ -38,13 +76,12 @@
         android:textStyle="bold"
         android:textSize="16sp"
         android:onClick="clickBtn"
-        android:layout_marginTop="24dp"/>
+        android:layout_marginTop="24dp"
+        android:background="@drawable/btn"
+        android:fontFamily="@font/jong"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:textColor="@color/white" />
 
 
-    <ListView
-        android:id="@+id/list_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-
-</LinearLayout>
+</RelativeLayout>

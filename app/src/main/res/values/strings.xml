@@ -1,15 +1,35 @@
 <resources>
-    <string name="app_name">WeatherOpenApiEx</string>
-    <string-array name="sec1_1"><item>기상청</item></string-array>
-    <string-array name="sec1_2"><item>수도권(서울)</item></string-array>
-    <string-array name="sec1_3"><item>부산</item></string-array>
-    <string-array name="sec1_4"><item>대구</item></string-array>
-    <string-array name="sec1_5"><item>광주</item></string-array>
-    <string-array name="sec1_6"><item>전주</item></string-array>
-    <string-array name="sec1_7"><item>대전</item></string-array>
-    <string-array name="sec1_8"><item>청주</item></string-array>
-    <string-array name="sec1_9"><item>강원</item></string-array>
-    <string-array name="sec1_10"><item>제주</item></string-array>
+    <string name="app_name">Weather</string>
+    <string-array name="sec1_1">
+        <item>기상청</item>
+    </string-array>
+    <string-array name="sec1_2">
+        <item>수도권(서울)</item>
+    </string-array>
+    <string-array name="sec1_3">
+        <item>부산</item>
+    </string-array>
+    <string-array name="sec1_4">
+        <item>대구</item>
+    </string-array>
+    <string-array name="sec1_5">
+        <item>광주</item>
+    </string-array>
+    <string-array name="sec1_6">
+        <item>전주</item>
+    </string-array>
+    <string-array name="sec1_7">
+        <item>대전</item>
+    </string-array>
+    <string-array name="sec1_8">
+        <item>청주</item>
+    </string-array>
+    <string-array name="sec1_9">
+        <item>강원</item>
+    </string-array>
+    <string-array name="sec1_10">
+        <item>제주</item>
+    </string-array>
 
     <string-array name="spinner_section">
         <item>개황</item>
